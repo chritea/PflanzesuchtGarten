@@ -36,81 +36,110 @@
     </nav>
 </header>
 
-    <section class="hero">
-        <h1 class="p-name">Suche</h1>
-        <form action='' class="form-inline" id="search" method="get">
-    <label for="search-input" hidden="">Search site</label>
-    <input id="search-input" name="query" placeholder="Suchbegriff eingeben" type="text"/>
-    <button type="submit" value="search">Suchen</button>
-</form>
+    
 
+    <section class="hero"
+    style='background-image: url("/images/2.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%;'
+    id="heroSection" onload="adjustTextColor(this)">
+         <div>
+            <h1 class="p-name" id="textOverlay">Mitmachen</h1>
+        </div>
     </section>
-    <main class="h-entry e-content container row">
-        <p></p>
+    <main class="post h-entry e-content container row">
+        <div class="post">
+            <p>Du möchtest auch Pflanzen tauschen oder einen Allerlei rund um Garten &amp; Co verkaufen?</p>
+<p>Sehr gerne!</p>
+<p>Wenn Du nur einzelne Pflanzen tauschen möchtest, komm einfach vorbei. Alles, was Du mit zwei Händen tragen kannst, kannst Du auf unserem Tauschtisch ablegen und gegen andere Pflanzen tauschen.</p>
+<p>Falls Du mehr tauschen oder etwas an einen Verkaufsstand bei Pflanze sucht Garten anbieten möchtest, melde dich bitte unter 07567/9887372 oder schreib eine Mail an <a href="mailto:ute-allgaeu@gmx.de">ute-allgaeu@gmx.de</a></p>
+
+        </div>
         
-
-<div class="blog-cards" id="results">
-    
-        <div class="card">
-            <a href="http://localhost:1313/blog/mitmachen/">
-                
-                    <img src="/images/2.jpg" alt="Suche">
-                
-                <div class="text">
-                    <h2>Mitmachen</h2>
-                    <p class="small">Du möchtest auch Pflanzen tauschen oder einen Allerlei rund um Garten &amp; Co verkaufen?
-Sehr gerne!
-Wenn Du nur einzelne Pflanzen tauschen möchtest, komm einfach vorbei.
-                    </p>
-                </a>
-            </div>
-        </div>
-    
-        <div class="card">
-            <a href="http://localhost:1313/blog/programm/">
-                
-                    <img src="/images/12.jpg" alt="Suche">
-                
-                <div class="text">
-                    <h2>Programm</h2>
-                    <p class="small">Wir werden dieses Jahr wieder ein Programm passend zum Thema Garten und Pflanzen anbieten. Seid gespannt!
-                    </p>
-                </a>
-            </div>
-        </div>
-    
-        <div class="card">
-            <a href="http://localhost:1313/blog/faq/">
-                
-                    <img src="/images/7.jpg" alt="Suche">
-                
-                <div class="text">
-                    <h2>Wie es funktioniert</h2>
-                    <p class="small">Was ist Pflanze sucht Garten?
-Pflanze sucht Garten ist eine Pflanzentauschbörse, ein Gartenflohmarkt, ein Ort um sich bei gutem Essen oder leckerem Kuchen über alles zum Thema Garten und mehr auszutauschen und vieles mehr.
-                    </p>
-                </a>
-            </div>
-        </div>
-    
-        <div class="card">
-            <a href="http://localhost:1313/blog/vergangenes/">
-                
-                    <img src="/images/6.jpg" alt="Suche">
-                
-                <div class="text">
-                    <h2>Vergangenes</h2>
-                    <p class="small">Der Urspung Es waren einmal ein paar Nachbarn, die trafen sich von Vorfrühling bis in den späten Herbst gerne am Gartenzaun, um sich über ihre lieben Gartenbewohner auszutauschen.
-                    </p>
-                </a>
-            </div>
-        </div>
-    
-</div>
-
-
-
+            
+            
+            
+            
+        
     </main>
+    <script>
+        function adjustTextColor(sectionId) {
+            const section = document.getElementById(sectionId);
+            const style = window.getComputedStyle(section);
+            const imageUrl = style
+                .backgroundImage
+                .slice(4, -1)
+                .replace(/["']/g, "");
+            const image = new Image();
+            image.src = imageUrl;
+            image.onload = function () {
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.width = image.width;
+                canvas.height = image.height;
+                context.drawImage(image, 0, 0, image.width, image.height);
+                const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+                const data = imageData.data;
+                let r = 0,
+                    g = 0,
+                    b = 0;
+                for (let i = 0; i < data.length; i += 4) {
+                    r += data[i];
+                    g += data[i + 1];
+                    b += data[i + 2];
+                }
+                r /= (data.length / 4);
+                g /= (data.length / 4);
+                b /= (data.length / 4);
+                const brightness = Math.sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);
+                const textColor = brightness > 128
+                    ? 'black'
+                    : 'white';
+                const shadowColor = brightness > 128
+                    ? 'rgba(255, 255, 255, 0.7)'
+                    : 'rgba(0, 0, 0, 0.7)';
+                const textOverlay = document.getElementById('textOverlay');
+                textOverlay.style.color = textColor;
+                textOverlay.style.textShadow = `0 0 5px ${shadowColor}, 0 0 10px ${shadowColor}, 0 0 20px ${shadowColor}, 0 0 40px ${shadowColor}, 0 0 80px ${shadowColor}, 0 0 90px ${shadowColor}, 0 0 100px ${shadowColor}, 0 0 150px ${shadowColor}`;
+            };
+        }
+        
+        adjustTextColor('heroSection');
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry
+                        .target
+                        .getAttribute('id');
+
+                    if (entry.intersectionRatio > 0) {
+                        clearActiveStatesInTableOfContents();
+                        document
+                            .querySelector(`nav li a[href="#${id}"]`)
+                            .parentElement
+                            .classList
+                            .add('active');
+                    }
+                });
+            });
+            document
+                .querySelectorAll('h1[id],h2[id],h3[id],h4[id]')
+                .forEach((section) => {
+                    observerForTableOfContentActiveState.observe(section);
+                });
+
+        });
+
+        function clearActiveStatesInTableOfContents() {
+            document
+                .querySelectorAll('nav li')
+                .forEach((section) => {
+                    section
+                        .classList
+                        .remove('active');
+                });
+        }
+    </script>
 <footer>
     <div class="social-media">
         
