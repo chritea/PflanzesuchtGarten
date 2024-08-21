@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/mitmachen/</loc>
+    <loc>https://Pflanzesuchtgarten.de/blog/mitmachen/</loc>
     <lastmod>2024-08-21T18:28:34+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://Pflanzesuchtgarten.de/</loc>
     <lastmod>2024-08-21T18:28:34+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/programm/</loc>
+    <loc>https://Pflanzesuchtgarten.de/blog/programm/</loc>
     <lastmod>2024-08-21T18:28:34+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/faq/</loc>
+    <loc>https://Pflanzesuchtgarten.de/blog/faq/</loc>
     <lastmod>2024-08-21T18:28:34+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/vergangenes/</loc>
+    <loc>https://Pflanzesuchtgarten.de/blog/vergangenes/</loc>
     <lastmod>2024-08-18T18:29:04+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://Pflanzesuchtgarten.de/blog/</loc>
     <lastmod>2024-05-01T18:28:34+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://Pflanzesuchtgarten.de/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://Pflanzesuchtgarten.de/tags/</loc>
   </url>
 </urlset>

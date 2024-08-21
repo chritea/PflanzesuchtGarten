@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Suche on Pflanze sucht Garten</title>
-    <link>http://localhost:1313/blog/</link>
-    <description>Recent content in Suche on Pflanze sucht Garten</description>
+    <title>Pflanze sucht Garten</title>
+    <link>https://Pflanzesuchtgarten.de/blog/</link>
+    <description>Recent content on Pflanze sucht Garten</description>
     <generator>Hugo</generator>
     <language>DE-de</language>
     <lastBuildDate>Wed, 21 Aug 2024 18:28:34 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Pflanzesuchtgarten.de/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mitmachen</title>
-      <link>http://localhost:1313/blog/mitmachen/</link>
+      <link>https://Pflanzesuchtgarten.de/blog/mitmachen/</link>
       <pubDate>Wed, 21 Aug 2024 18:28:34 +0000</pubDate>
-      <guid>http://localhost:1313/blog/mitmachen/</guid>
+      <guid>https://Pflanzesuchtgarten.de/blog/mitmachen/</guid>
       <description>Du möchtest auch Pflanzen tauschen oder einen Allerlei rund um Garten &amp;amp; Co verkaufen?&#xA;Sehr gerne!&#xA;Wenn Du nur einzelne Pflanzen tauschen möchtest, komm einfach vorbei.</description>
     </item>
     <item>
       <title>Programm</title>
-      <link>http://localhost:1313/blog/programm/</link>
+      <link>https://Pflanzesuchtgarten.de/blog/programm/</link>
       <pubDate>Wed, 21 Aug 2024 18:28:34 +0000</pubDate>
-      <guid>http://localhost:1313/blog/programm/</guid>
+      <guid>https://Pflanzesuchtgarten.de/blog/programm/</guid>
       <description>Wir werden dieses Jahr wieder ein Programm passend zum Thema Garten und Pflanzen anbieten. Seid gespannt!</description>
     </item>
     <item>
       <title>Wie es funktioniert</title>
-      <link>http://localhost:1313/blog/faq/</link>
+      <link>https://Pflanzesuchtgarten.de/blog/faq/</link>
       <pubDate>Wed, 21 Aug 2024 18:28:34 +0000</pubDate>
-      <guid>http://localhost:1313/blog/faq/</guid>
+      <guid>https://Pflanzesuchtgarten.de/blog/faq/</guid>
       <description>Was ist Pflanze sucht Garten?&#xA;Pflanze sucht Garten ist eine Pflanzentauschbörse, ein Gartenflohmarkt, ein Ort um sich bei gutem Essen oder leckerem Kuchen über alles zum Thema Garten und mehr auszutauschen und vieles mehr.</description>
     </item>
     <item>
       <title>Vergangenes</title>
-      <link>http://localhost:1313/blog/vergangenes/</link>
+      <link>https://Pflanzesuchtgarten.de/blog/vergangenes/</link>
       <pubDate>Sun, 18 Aug 2024 18:29:04 +0000</pubDate>
-      <guid>http://localhost:1313/blog/vergangenes/</guid>
+      <guid>https://Pflanzesuchtgarten.de/blog/vergangenes/</guid>
       <description>Der Urspung Es waren einmal ein paar Nachbarn, die trafen sich von Vorfrühling bis in den späten Herbst gerne am Gartenzaun, um sich über ihre lieben Gartenbewohner auszutauschen.</description>
     </item>
   </channel>
